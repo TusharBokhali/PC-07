@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.w-100{
+    width: 100vw;
+}
+nav{
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+nav ul li{
+    padding: 18px 3px;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgba(58, 71, 83, 0.678);
+    font-size: 1.4vw;
+    font-weight: 400;
+    transition: 0.3s;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 15px;
+    position: relative;
+}
+nav h1 span{
+    color: #0ea2bd;
+    position: relative;
+    right: 10px;
+    font-size: 2.5vw;
+}
+nav h1{
+    font-size: 3vw;
+    font-family: 'Poppins', sans-serif;
+    color: #485664;
+    font-weight: 300;
+}
+nav ul li a::before{
+    content: '';
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    background-color: #0ea2bd;
+    top: 30px;
+    transition: 0.4s;
+}
+nav ul li a:hover::before{
+    width: 70%;
+}
+nav > a{
+    padding: 10px 23px;
+    background-color: #0ea2bd;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5vw;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+}
+.hover:hover{
+    background-color: #485664;  
+    transition: 0.3s;
+}
+.hover:hover a{
+    color: white;
+}
+.index-menu{
+    width: 200px;
+    height: 200px;
+    background-color: #485664;  
+    position: absolute;
+    top: 60px;
+    left:170px;
+    display: none;
+    transition: 0.5s;
+    z-index: 5;
+}
+.index-menu ul{
+    flex-direction: column;
+
+}
+.index-menu ul li{
+    padding: 0;
+}
+.index-menu ul li a{
+    color: white;
+    line-height: 45px;
+    
+}
+.index-menu ul li:nth-child(1){
+    background-color: #0ea2bd;
+}
+.index-menu ul li:hover{
+    background-color: #0ea2bd;
+    transition: 0.5s;
+}
+nav ul li:hover .index-menu{
+    display: block;
+}
+.biggest-menu{
+    width: 920px;
+    height: 150px;
+    background-color: #485664;
+    position: absolute;
+    right: 170px;
+    top: 63px;
+    display: none;
+    z-index: 5;
+}
+.biggest-menu ul li a{
+    color: rgba(255, 255, 255,0.5)!important;
+    line-height: 40PX;
+}
+.biggest-menu ul a:hover::before{
+    width: 0%;
+}
+.biggest-menu ul li a:hover{
+    color: rgba(255, 255, 255)!important;
+    transition: 0.5s;
+}
+.biggest-menu ul li{
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+}
+nav ul li:hover .biggest-menu{
+    display: block;
+}
+.drop{
+    width: 220px;
+    height: 230px;
+    background-color: #485664;
+    position: absolute;
+    top: 63px;
+    display: none;
+    z-index: 5;
+}
+.drop ul li a:hover::before{
+    width: 0%;
+}
+.drop ul li{
+    line-height:5px;
+
+}
+.drop ul{
+    flex-direction: column;
+}
+.drop ul li a{
+    color:rgba(255, 255, 255,0.5)!important;
+    transition: 0.3s;
+}
+.drop ul li a:hover{
+    color:rgba(255, 255, 255)!important;
+    transition: 0.3s;
+}
+nav ul li:hover .drop{
+    display: block;
+}
+.drop1{
+    width: 220px;
+    z-index: 5;
+    height: 220px;
+    background-color: #485664;
+    position: absolute;
+    right: 100%;
+    top: 65px;
+    display: none;
+}
+.drop ul li:hover .drop1{
+    display: block;
+}
+.header{
+    width: 100vw;
+    height: calc(100% - 70px);
+    text-align: center;
+}
+.first-img img{
+    margin-top: 20px;
+    width: 40%;
+    animation: up-down 1s ease-in-out infinite alternate-reverse both;
+    margin-bottom: 50px;
+}
+@keyframes up-down {
+    from{
+        transform: translateY(25px);
+    }
+    to{
+
+    }
+}
+.lorem-text{
+    width: 100vw;
+}
+.lorem-text h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 4vw;
+    font-weight: 300;
+    color: #485664;
+}
+.lorem-text span{
+    color: #0ea2bd;
+}
+.lorem-text p{
+    margin: 0 0 30px 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(72, 86, 100,0.8);
+    font-family: 'Open Sans', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.lorem-text a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0ea2bd;
+    font-weight: 400;
+    padding: 10px 28px;
+    border-radius: 4px;
+    font-size: 1.5vw;
+}
+.but-a{
+    display: flex;
+    justify-content: center;
+}
+.but-a a,img{
+    margin: 0 15px;
+}
+.but-a span{
+    color: #485664!important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    top: 15px;
+    font-size: 1.3vw;
+}
+.but-a span:hover{
+    color: #0ea2bd!important;
+    transition: 0.4s;
+}
+.cards{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 0 25px ;
+}
+.card-hi{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+.card{
+    width: 25%;
+    height: 250px;
+    text-align: left;
+    padding: 35px 45px;
+    margin: 0 5px;
+    background: #ffffff;
+    border-radius: 5px;
+}
+.card h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vw;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.card p{
+    line-height: 24px;
+    font-size: 14px;
+    color: #1a1f24;
+    padding: 0 0px;
+    font-family: 'Open Sans', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    border: none;
+}
+.card:hover{
+    box-shadow:0px 0 10px 0 #8f9fae;
+    transform: translateY(-10px);
+    transition: ease-in-out 0.5s;
+    border-radius: 2px;
+}
+
+
+@media (max-width:1200px) {
+    nav ul{
+        display: none;
+    }
+    .cards{
+        flex-wrap: wrap;
+        margin-top: 400px;
+    }
+}
+
+@media (max-width:800px) {
+    nav ul{
+        display: none;
+    }
+    .cards{
+        flex-wrap: wrap;
+        margin-top: 400px;
+    }
+    .card{
+        /* width: 50%; */
+    }
+}

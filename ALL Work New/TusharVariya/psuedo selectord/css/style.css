@@ -1,0 +1,65 @@
+/* p:hover {
+    background-color: green;
+    color: white;
+}
+
+span:first-child {
+    color: red;
+}
+
+span:first-of-type {
+    background-color: aqua;
+}
+
+a:active {
+    background-color: black;
+    color: white;
+}
+
+a:visited {
+    background-color: aqua;
+    color: yellowgreen;
+} */
+
+a:link {
+    background-color: pink;
+}
+/* div:last-child{
+    color: green;
+}
+div:last-of-type{
+    color: yellowgreen;
+} */
+/* pre:nth-child(1){
+    color: green;
+}
+pre:nth-last-child(2){
+    color: gray;
+}
+pre:nth-last-of-type(1)
+{
+    color: blue;
+}
+.ols span:only-child{
+    background-color: brown;
+}
+input:in-range{
+    background-color: green;
+}
+input:out-of-range{
+    background-color: red;
+}
+#oj:valid{
+    background-color: greenyellow;
+    color: red;
+}
+#oj:invalid{
+    background-color: black;
+    color: white;
+} */
+/* .para p::first-letter{
+    color: green;
+} */
+.para span::first-line{
+    color: green;
+}

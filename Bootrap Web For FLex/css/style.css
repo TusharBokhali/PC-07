@@ -1,0 +1,779 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden; */
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.w-100{
+    width: 100%;
+    /* overflow-x:visible */
+    height: 950px;
+    background-image: url(" /hero-bg.jpg");
+    background-size:contain;
+    filter: opacity(12);
+    position: relative;
+}
+.w-1170{
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    /* position:fixed; */
+}
+.doat{
+    color: rgba(231, 231, 7, 0.808);
+}
+.w-20{
+    margin: 10px 0px;
+    width: 20%;
+    color: white;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto,sans-serif;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+ul li{
+    padding: 0px 10px;
+
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.w-60{
+    margin-left: 30px;
+    width: 60%;
+    /* position: fixed; */
+}
+.w-60 ul li a{
+    font-family: Roboto,sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+.sub-40{
+    width: 170px;
+    background-color: white;
+    border-radius: 2px;
+    display: none;
+    position: relative;
+}
+.sub-40 ul li a{
+    color: black;
+}
+.sub-40 ul{
+    /* flex-wrap: nowrap; */
+    flex-direction: column;
+    row-gap: 8px;
+}
+ul li:hover .sub-40{
+    z-index: 100;
+    display: block;
+    position: absolute;
+}
+ul li a:hover{
+    color: chocolate;
+    transition: 0.5s;
+}
+.sub1{
+    width: 170px;
+    background-color: white;
+    display: none;
+    float: right;
+    position: absolute;
+    right: inherit;
+    right: 200px;
+}
+ul li:hover .sub1{
+    display: block;
+    transform: translate(3ch, 3mm);
+    transition: 0.5s;
+}
+.w-20 button{
+    padding: 10px 35px;
+    border: 3px solid yellow;   
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.377);
+}
+.larg-txt{
+    width: 100%;
+    margin-top: 200px;
+    text-align: center;
+    font-family: Roboto,sans-serif;
+    /* font-size: 422px; */
+    color: white;
+    font-size: 52px;
+    font-weight: 750;
+    z-index: 1000;
+    /* background-color: black; */
+}
+.smaller-txt{
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-family: Roboto,sans-serif;
+    font-weight: 500;
+    margin-top: 15px;
+}
+.boxes{
+    margin: 50px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.box{
+    cursor: pointer;
+    width: calc(200px - 20px);
+    height: 160px;
+    /* background-color: black; */
+    margin: 10px;
+    text-align: center;
+    border: 2px solid gray;
+    
+}
+/* .box:first-child{
+    margin-left: 100px;
+} */
+.box:hover{
+    border-color: rgb(251, 255, 3);
+    transition: 0.5s;
+}
+.logo{
+    margin-top: 50px;
+
+}
+.all{
+    text-align: center;
+    /* line-height: 50px; */
+}
+.all p{
+    margin-top: 5px;
+    font-size: 24px;
+    color: white;
+    font-family: Roboto,sans-serif;
+    font-weight: 400;
+}
+.center-part{
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    /* overflow-y: hidden; */
+}
+.txet-img{
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 50px;
+    
+}
+.image img{
+    /* text-align: center; */
+    width: 600px;
+}
+.write{
+   
+    width: 50%;
+}
+.write h2{
+    font-family: Roboto,sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: rgb(141, 138, 138);
+}
+.write p{
+    margin-top: 10px;
+    font-family: Roboto,sans-serif;
+    font-style: italic;
+    font-weight: 600;
+}
+.write ul{
+ margin-top: 5px;
+ list-style:circle;
+}
+.write ul li{
+    font-size: 18px;
+    font-family: Roboto,sans-serif;
+    list-style: circle;
+}
+.last{
+    font-weight: normal;
+    margin-top: 5px;
+}
+.slide-loop{
+    width: 100%;
+    height: 200px;
+    /* overflow-y: hidden; */
+    margin-top: 50px;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.slide{
+    width: 200px;
+    height: 200px;
+}
+.slide img{
+    width: 100px;
+    filter:grayscale(1.5);
+}
+.slide img:hover{
+    filter: grayscale(0);
+    transition: 0.5s;
+}
+.tx-image{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 60px;
+}
+.first{
+    display: flex;
+}
+.images{
+    /* background-image: url("https://bootstrapmade.com/demo/templates/Gp/assets/img/features.jpg"); */
+    background-size: 100% 100%;
+    
+    width: 50%;
+}
+.desciption1{
+    width: 100%;
+    margin-left: 15px;
+}
+.desciption1 h2{
+    margin-left: 15px;
+    font-family: Roboto,sans-serif;
+    font-weight: 550;
+}
+.desciption1 p{
+    margin-left: 35px;
+    font-family: Roboto,sans-serif;
+}
+.second{
+    display: flex;
+    margin: 25px;
+}
+.third{
+    display: flex;
+    margin: 25px;
+}
+.four{
+    display: flex;
+    margin: 25px;
+}
+.animator-cards{
+    width: 100%;
+
+}
+.top-des{
+    width: 100%;
+    margin-left: 30px;
+}
+.top-des p,h1{
+    font-family: Roboto,sans-serif;
+}
+.anamate-card{
+    width: 300px;
+    height: 250px;
+    background-color: white;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.alls{
+    text-align: center;
+}
+.Allcards{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.ico{
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    text-align: center;
+    /* /* line-height: 20px; */
+    background-color: #fbc107;
+    margin-left: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.alls h2{
+    font-family: sans-serif;
+    cursor: pointer;
+}
+.alls h2:hover{
+    color: #fbc107;
+    transition: 0.5s;
+}
+.secondcards{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.anamate-card:hover{
+    transform: translateY(-10px); 
+    transition:0.5s;
+}
+.secondcards:hover{
+    transform: translateY(-10px);
+    transition:0.5s;
+}
+.fixe-images{
+    width: 100%;
+    height: 300px;
+    background-image: url("https://bootstrapmade.com/demo/templates/Gp/assets/img/cta-bg.jpg") ;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    filter: brightness(0.8);
+    justify-content: center;
+    align-items: center;
+   
+}
+.tx h2{
+    width: 100%;
+    text-align: center;
+    text-align: center;
+}
+.tx p{
+    font-family: system-ui;
+    text-align: center;
+    margin: 5px 10px;
+}
+.fixe-images h2{
+    font-family: sans-serif;
+}
+.bu{
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 215px;
+}
+.tx button{
+    padding: 15px 30px;
+    border: 2px solid white;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.377);
+    font-family: revert;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 195px;
+    border-radius: 7px;
+}
+.more-img{
+    width: 100%;
+    margin: 20px;
+}
+.all-icon ul li a{
+    color: black;
+    font-family: Roboto,sans-serif;
+
+}
+.all-icon {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+.all-icon ul li:hover{
+    background-color: orange;
+    height: 25px;
+    border-radius: 5px;
+}
+.imgs-33{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.img-33{
+    margin: 10px;   
+    width: calc(33.33% - 20px);
+    cursor: pointer;
+    overflow: hidden;
+}
+.img-33 img{
+    width: 100%;
+}
+.img-33 img:hover{
+    transform: scale(1.5);
+    transition: 0.5s;
+    filter: brightness(0.5);
+}
+.civil-all{
+    width: 100%;
+    display: flex;
+    
+    margin: 25px;
+}
+.civil-img{
+    width: 50%;
+}
+.civil-text{
+    width: 50%;
+}
+.row1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: center ;
+}
+.first-row{
+    /* border: 1px solid black; */
+    width: calc(50% - 20px);
+    padding: 5px;
+    height: 100px;
+    margin: 10px;
+}
+.attcement{
+    width: 100%;
+    height: 500px;
+    background-image: url("https://bootstrapmade.com/demo/templates/Gp/assets/img/testimonials-bg.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.profile{
+    width: 80%;
+    color: white;
+    text-align: center;
+   margin-top: 20px;
+}
+.pro-img{
+  margin-left: 200px;
+}
+.pro-img img{
+    text-align: center;
+    margin-top: 75px;
+    width: 100px;
+    box-shadow: 5px 5px 5px rgb(99, 95, 95);
+    border-radius: 100%;
+
+    align-items: center ;
+}
+.shop{
+    width: 100%;
+}
+.cards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.card{
+    width: 250px;
+    height: 320px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px gray;
+    margin: 20px;
+
+}
+.card img{
+    width: 100%;
+    border-radius: 5px;
+}
+.maps{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+.forms{
+    width: 70%;
+    /* margin-top: 50px; */
+    margin: 50px 30px;
+    flex-wrap: wrap;
+    display: flex;
+}
+.main-locations{
+    width: 100%;
+    display: flex;
+    margin:      70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.locate{
+    width: 40%;
+    
+}
+/* margin-left: 0px; */
+.log-detail{
+    display: flex;  
+    margin: 10px;
+    margin-bottom: 50px;
+}
+.logos{
+    width: 50px;
+    height: 50px;
+    background-color: #ffbc10;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.txt-logo{
+    margin-left: 20px;
+}
+.log-detail p{
+    font-family: Roboto,sans-serif;
+    color: gray;
+}
+.log-detail h2{
+    font-family: Roboto,sans-serif;
+    font-weight: 600;
+}
+.input-bar{
+    width: 60%;
+    /* text-align: center; */
+}
+.names input{
+    padding: 15px 119px 15px 5px;
+    font-family:Roboto,sans-serif ;
+    font-size: 16px ;
+    border-color:gray ;
+    border-radius: 5px;
+    margin: 10px;
+}
+.subjection input{
+    padding: 13px 457px 14px 14px;
+    font-family:Roboto,sans-serif ;
+    font-size: 16px ;
+    border-color:gray ;
+    border-radius: 5px;
+    margin: 10px;
+
+}
+.text-area textarea{
+    /* padding: 10px  10px 8px 0px 10px; */
+    padding: 9px 12px;
+    /* margin:  0px 5px; */
+}
+.text-area{
+    margin-left: 13px;
+}
+
+/* .button{
+    text-align: center;
+} */
+.text-area button{
+    padding: 12px 23px 12px 20px;
+    background-color:  #ffbc10;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 260px; 
+    margin-top: 20px;
+}
+footer{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(22, 20, 20);
+
+}
+.all-parts{
+    width: 80%;
+    margin: auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.w-25{
+    width: 25%;
+    height: 300px;
+    /* border: 1px solid black; */
+}
+.hover:hover{
+    color: #ffbc10;
+    cursor: pointer;
+}
+.w-20 i{
+    display: none;
+ 
+}
+.buttonss{
+    background-color: #ffbc10;
+    padding: 10px 15px 5px 10px;
+    margin-top: 18px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.w-25 input{
+    padding: 8px 33px;
+    float: left;
+}
+.last-part{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* row-gap: 5px; */
+}
+.social-icon{
+    color: white;
+   display: flex;
+    margin-top: 20px;
+    /* background-color: white; */
+}
+.te-right{
+
+    text-align: right;
+    display: flex;
+    justify-content: end;
+}
+.position
+{
+    width: 50px;
+    height: 50px;
+    background-color: #fbc107;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    position: fixed;
+   top: 90%;
+   margin: 0 10px;
+   cursor: pointer;
+}
+.position i{
+    font-size: 32px;
+}
+.social-color{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(32, 30, 30);
+    border-radius: 5px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.social-color:hover{
+    /* color: #ffbc10; */
+    background-color: #ffbc10;
+}
+.felxis{
+    display: flex;
+    margin-top: 20px;
+}
+
+@media (max-width:1200px) {
+    .slide-loop{
+        margin-left: 20px;
+    }
+}
+@media (min-width:968px) and (max-width:1200px) {
+    .w-100{
+       width: 1200px;
+    }
+    .boxes{
+        flex-wrap: wrap;
+    }
+   
+    
+    .w-1170{
+        width: 968px;
+    }
+    .w-20{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+@media (max-width:968px) {
+    .w-1170{
+        width: 720px;
+    }
+    .fixe-images {
+        width: 119%;
+    }
+    .w-60 ul{
+        display: none;
+    }
+    .w-20{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .boxes{
+        flex-wrap: wrap;
+    }
+    .w-20 i{
+        display: block;
+    }
+    .slide-loop{
+        position: relative;
+        top: 100px;
+        left: 50px;
+    }
+    .tx-image{
+        left: 200px;
+        flex-direction: column;
+        position: relative;
+    }
+    .Allcards {
+        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .top-des {
+      
+        margin-left: 58px;
+        margin-top: 38px;
+    }
+    .secondcards{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width:720) and (max-width:968px) {
+    .w-100{
+       width: 720px;
+    }
+    .boxes{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:720px) {
+    .w-100{
+        width: 968px;
+     }
+     
+}

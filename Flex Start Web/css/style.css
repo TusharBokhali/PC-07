@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.w-100 {
+    width: 100%;
+    background: url(https://bootstrapmade.com/demo/templates/FlexStart/assets/img/hero-bg.png) top center no-repeat;
+    height: 100vh;
+}
+
+.w-1200 {
+    
+    width: 1200px;
+    margin: auto;
+    /* background-color: aqua; */
+    padding: 40px;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo h1 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: "Nunito", sans-serif;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 0 0px;
+    position: relative;
+}
+
+.active {
+    color: #4154f1;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #013289;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Nunito", sans-serif;
+}
+
+nav ul a {
+    padding: 10px 15px;
+}
+
+.drop {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+    border-radius: 4px;
+    z-index: 99;
+    display: none;
+    background: #fff;
+}
+
+nav ul li a:hover {
+    color: #4154f1;
+    transition: ease-in-out 0.5s;
+}
+
+.drop1 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+    border-radius: 4px;
+    z-index: 99;
+    display: none;
+    left: -112%;
+    top: 0;
+    padding: 5px 10px;
+}
+
+.drop ul li:hover .drop1 {
+    display: block;
+}
+
+.drop ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0px;
+}
+
+.drop ul li {
+    line-height: 35px;
+}
+
+.drop ul li a {
+    color: #013289;
+}
+
+nav ul li:hover .drop {
+    display: block;
+}
+
+.mega {
+    width: 800px;
+    height: 150px;
+    /* border: 1px solid black; */
+    position: absolute;
+    right: -70px;
+    top: 22px;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+    border-radius: 4px;
+    padding: 10px 10px;
+    display: none;
+}
+
+.mega ul li {
+    display: flex;
+    flex-direction: column;
+}
+
+.mega ul {
+    justify-content: space-around;
+}
+
+nav ul li:hover .mega {
+    display: block;
+}
+
+nav ul>a {
+    /* padding: 10px 15px; */
+    color: #fff;
+    text-decoration: none;
+    background-color: #4154f1;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-family: "Nunito", sans-serif;
+    border-radius: 4px;
+    color: #fff;
+}
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    height: 500px;
+}
+.text{
+    width: 50%;
+    /* padding: 0 25px; */
+}
+.text h1{
+    font-size: 48px;
+    font-weight: 700;
+    color: #012970;
+    transition-timing-function: ease-in-out;
+}

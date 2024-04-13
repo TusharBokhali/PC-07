@@ -1,0 +1,14 @@
+.container{
+    width: 25%;
+    border: 1px solid black;
+    overflow: hidden;
+}
+.container img{
+    width: 100%;
+    display: block;
+    transition: 0.5s;
+}
+.container:hover img{
+  -webkit-transform: scale(1.5);
+   -webkit-transform: translate(25px); 
+}
